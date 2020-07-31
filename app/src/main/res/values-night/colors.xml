@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSurface">@color/bright_grey</color>
+
+    <color name="textColorButton">@color/white</color>
+  <color name="textColorOverline">@color/white</color>
+    <color name="textColorOverlineInverse">@color/bright_grey</color>
+  <color name="textColorBody2">@color/white</color>
+    <color name="textColorHeadline">@color/white</color>
+
+    <color name="colorButtonIconRipple">@color/colorSurface</color>
+
+    <color name="colorNavDivider">@color/bright_grey</color>
+
+    <color name="colorBadge">@color/nice_blue</color>
+</resources>

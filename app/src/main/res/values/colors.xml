@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#00CB2C</color>
+    <color name="colorAccent">#03DAC5</color>
+  <color name="background">#f8f8f8</color>
+  <color name="darkMaterialRed">#aa2e25</color>
+    <color name="white">#ffffff</color>
+
+    <color name="charcoal_black">#333333</color>
+    <color name="bright_grey">#3b4048</color>
+  <color name="raven_grey">#6e7687</color>
+    <color name="light_gray_blue">#a7adb4</color>
+  <color name="pale_blue">#dfe7f0</color>
+    <color name="copper">#cf3b2b</color>
+  <color name="pumpkin_orange">#fd7401</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="nice_blue">#157cb8</color>
+
+    <color name="colorSurface">@color/white</color>
+    <color name="colorError">@color/copper</color>
+  <color name="colorWarning">@color/pumpkin_orange</color>
+
+    <color name="colorButtonIconRipple">@color/pale_blue</color>
+
+    <color name="textColorButton">@color/raven_grey</color>
+    <color name="textColorOverline">@color/raven_grey</color>
+    <color name="textColorOverlineInverse">@color/white</color>
+    <color name="textColorBody2">@color/raven_grey</color>
+    <color name="textColorBody2Inverse">@color/white</color>
+    <color name="textColorHeadline">@color/charcoal_black</color>
+
+    <color name="colorIcon">@color/light_gray_blue</color>
+    <color name="colorIconInverse">@color/white</color>
+
+
+    <color name="colorNavDivider">@color/transparent</color>
+
+    <color name="colorBadge">@color/nice_blue</color>
+</resources>

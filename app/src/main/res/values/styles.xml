@@ -1,0 +1,120 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorError">@color/darkMaterialRed</item>
+
+        <!--        <item name="fontFamily">@font/lato_regular</item>-->
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+    <style name="Button.Icon" parent="Button.Text.Icon">
+        <item name="android:paddingStart">@dimen/button_padding_internal_dense</item>
+        <item name="android:paddingEnd">@dimen/button_padding_internal_dense</item>
+        <item name="android:insetTop">@dimen/button_inset</item>
+        <item name="android:insetBottom">@dimen/button_inset</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+
+    <style name="Button.Text.Icon" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:minHeight">@dimen/button_height_default</item>
+        <item name="android:paddingStart">@null</item>
+        <item name="android:paddingEnd">@null</item>
+        <item name="iconTint">@color/colorIcon</item>
+        <item name="iconPadding">@dimen/button_padding_internal</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textColor">@color/colorIcon</item>
+        <item name="android:textAppearance">@style/TextAppearance.Button.Regular</item>
+        <item name="rippleColor">@color/colorButtonIconRipple</item>
+    </style>
+
+    <style name="Text" />
+
+    <style name="Text.Regular">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Text.Bold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="Text.Headline">
+        <item name="android:fontFamily">@font/bitter_bold</item>
+        <item name="fontFamily">@font/bitter_bold</item>
+    </style>
+
+    <style name="TextAppearance.Headline" parent="Text.Headline">
+        <item name="android:textColor">@color/textColorHeadline</item>
+        <item name="android:letterSpacing">@fraction/letter_spacing_headline</item>
+    </style>
+
+    <style name="TextAppearance.Body" parent="Text.Regular">
+        <item name="android:letterSpacing">@fraction/letter_spacing_body</item>
+    </style>
+
+    <style name="TextAppearance.Body.2" parent="TextAppearance.Body">
+        <item name="android:textSize">@dimen/text_size_body_2</item>
+        <item name="android:textColor">@color/textColorBody2</item>
+    </style>
+
+    <style name="TextAppearance.Body.2.Inverse" parent="TextAppearance.Body.2">
+        <item name="android:textColor">@color/textColorBody2Inverse</item>
+    </style>
+
+    <!-- Default overline style -->
+
+    <!-- TextAppearance.Overline.3 -->
+
+    <!-- TextAppearance.Overline.4 -->
+    <style name="TextAppearance.Overline.4" parent="Text.Bold">
+        <item name="android:textSize">@dimen/text_size_overline</item>
+        <item name="android:textColor">@color/textColorOverline</item>
+        <item name="android:letterSpacing">@fraction/letter_spacing_overline_3</item>
+    </style>
+
+    <style name="TextAppearance.Button" parent="Text.Bold">
+        <item name="android:textColor">@color/textColorButton</item>
+    </style>
+
+    <style name="TextAppearance.Overline.Raised" parent="TextAppearance.Overline.4">
+        <item name="android:paddingStart">@dimen/overline_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/overline_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/overline_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/overline_padding_vertical</item>
+        <item name="android:elevation">@dimen/overline_elevation</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextAppearance.Overline.Raised.Colored.White" parent="TextAppearance.Overline.Raised">
+        <item name="android:background">@drawable/bg_caption_white</item>
+        <item name="android:textColor">@color/textColorOverlineInverse</item>
+    </style>
+
+    <style name="TextAppearance.Button.Regular" parent="TextAppearance.Button">
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:letterSpacing">@fraction/letter_spacing_button</item>
+    </style>
+
+    <style name="TextAppearance.Headline.2" parent="TextAppearance.Headline">
+        <item name="android:textSize">@dimen/text_size_h2</item>
+    </style>
+
+</resources>

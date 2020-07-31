@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_splash">
+
+    <fragment
+        android:id="@+id/navigation_splash"
+        android:name="com.breakit.driver.ui.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_navigation_splash_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/enter_bottom"
+            app:popExitAnim="@anim/exit_bottom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.breakit.driver.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_meal_detail"
+            app:destination="@id/navigation_meal_detail"
+            app:enterAnim="@anim/enter_bottom"
+            app:popExitAnim="@anim/exit_bottom" />
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_map"
+            app:destination="@id/navigation_map"
+            app:enterAnim="@anim/enter_bottom"
+            app:popExitAnim="@anim/exit_bottom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_meal_detail"
+        android:name="com.breakit.driver.ui.meal.MealDetailsBottomSheetFragment"
+        tools:layout="@layout/fragment_meal_details_bottom_sheet" />
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.breakit.driver.ui.map.MapFragment"
+        tools:layout="@layout/fragment_map" />
+
+</navigation>

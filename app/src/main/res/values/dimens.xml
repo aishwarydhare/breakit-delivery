@@ -1,0 +1,66 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Status bar height (24dp) -->
+    <!-- Status bar height (24dp) + 4dp margin -->
+    <!-- Status bar height (24dp)+ 16dp margin -->
+    <dimen name="guideline_top_status_bar_2">40dp</dimen>
+
+    <!-- Card View -->
+    <dimen name="card_corner_radius_snackbar">4dp</dimen>
+
+    <!-- Search view -->
+
+    <!-- Icon -->
+    <dimen name="icon_height_width">24dp</dimen>
+    <!-- For text left/right drawables -->
+    <dimen name="icon_height_width_2">20dp</dimen>
+
+    <!-- Overline -->
+    <dimen name="overline_padding_horizontal">6dp</dimen>
+    <dimen name="overline_padding_vertical">4dp</dimen>
+    <dimen name="overline_elevation">1dp</dimen>
+
+    <!-- Button -->
+    <dimen name="button_height_default">52dp</dimen>
+    <dimen name="button_corner_radius">6dp</dimen>
+    <dimen name="button_padding_internal">8dp</dimen>
+    <dimen name="button_padding_internal_dense">4dp</dimen>
+    <dimen name="button_inset">2dp</dimen>
+
+    <!-- Chip -->
+
+    <!-- TabLayout -->
+
+    <!-- Text -->
+    <dimen name="text_size_h2">24sp</dimen>
+    <dimen name="text_size_body_2">14sp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+    <dimen name="text_size_overline">10sp</dimen>
+
+    <!-- Checkbox -->
+    <dimen name="checkbox_icon_stroke_width">2dp</dimen>
+
+    <!-- Progress bar -->
+    <dimen name="progress_bar_medium_height_width">48dp</dimen>
+    <dimen name="progress_bar_support_text_spacing">24dp</dimen>
+
+    <!-- Library view -->
+
+    <!-- Collection detail view -->
+
+    <!-- Card divider height -->
+
+    <!-- Login view -->
+
+    <!-- Filter view -->
+
+    <!-- Player -->
+
+    <!-- Settings -->
+
+    <!-- On-boarding -->
+
+</resources>
