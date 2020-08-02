@@ -3,13 +3,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.breakit.driver.ui.home.HomeFragment">
+    tools:context="com.breakit.delivery.ui.home.HomeFragment">
 
     <data>
 
         <variable
             name="deliveryExecutive"
-            type="com.breakit.driver.model.DeliveryExecutive" />
+            type="com.breakit.delivery.model.DeliveryExecutive" />
     </data>
 
     <LinearLayout

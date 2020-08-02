@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.breakit.driver.fragments.LoginDialogFragment">
+    tools:context="com.breakit.delivery.fragments.LoginDialogFragment">
 
     <data>
 
         <variable
             name="viewmodel"
-            type="com.breakit.driver.ui.login.LoginBottomSheetViewModel" />
+            type="com.breakit.delivery.ui.login.LoginBottomSheetViewModel" />
     </data>
 
     <RelativeLayout

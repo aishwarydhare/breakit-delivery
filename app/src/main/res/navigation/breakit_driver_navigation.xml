@@ -2,23 +2,26 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
     app:startDestination="@id/navigation_splash">
 
     <fragment
         android:id="@+id/navigation_splash"
-        android:name="com.breakit.driver.ui.splash.SplashFragment"
+        android:name="com.breakit.delivery.ui.splash.SplashFragment"
         tools:layout="@layout/fragment_splash">
 
         <action
             android:id="@+id/action_navigation_splash_to_navigation_home"
             app:destination="@id/navigation_home"
             app:enterAnim="@anim/enter_bottom"
-            app:popExitAnim="@anim/exit_bottom" />
+            app:popExitAnim="@anim/exit_bottom"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.breakit.driver.ui.home.HomeFragment"
+        android:name="com.breakit.delivery.ui.home.HomeFragment"
         tools:layout="@layout/fragment_home">
 
         <action
@@ -36,12 +39,12 @@
 
     <fragment
         android:id="@+id/navigation_meal_detail"
-        android:name="com.breakit.driver.ui.meal.MealDetailsBottomSheetFragment"
+        android:name="com.breakit.delivery.ui.meal.MealDetailsBottomSheetFragment"
         tools:layout="@layout/fragment_meal_details_bottom_sheet" />
 
     <fragment
         android:id="@+id/navigation_map"
-        android:name="com.breakit.driver.ui.map.MapFragment"
+        android:name="com.breakit.delivery.ui.map.MapFragment"
         tools:layout="@layout/fragment_map" />
 
 </navigation>

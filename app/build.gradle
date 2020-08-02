@@ -30,13 +30,13 @@ android {
 //    }
 
     defaultConfig {
-        applicationId "com.reposenergy.driver"
+        applicationId "com.breakit.delivery"
         minSdkVersion versions.minSdk
         targetSdkVersion versions.targetSdk
         versionCode versions.versionCode
         versionName versions.versionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        testInstrumentationRunner "com.reposenergy.customer.CustomTestRunner"
+        testInstrumentationRunner "com.breakit.customer.CustomTestRunner"
         vectorDrawables.useSupportLibrary true
         multiDexEnabled true
         javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
@@ -48,23 +48,12 @@ android {
     }
 
     buildTypes {
-//        release {
-//            signingConfig signingConfigs.release
-//            minifyEnabled true
-//            shrinkResources true
-//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-//
-//            buildConfigField 'String', "CLIENT_ID", ""
-//            buildConfigField 'String', "CLIENT_SECRET", ""
-//            buildConfigField 'String', "BASE_API_URL", "https://api.reposenergy.com/"
-//        }
-
         debug {
             versionNameSuffix "-debug"
             ext.alwaysUpdateBuildId = false
 
             buildConfigField 'String', "APIKEY", "\"x37b723nx1xdwq\""
-            buildConfigField 'String', "BASE_API_URL", "\"http://192.168.1.15:8000/\""
+            buildConfigField 'String', "BASE_API_URL", "\"http://3.6.94.159:8000/\""
         }
 
     }
@@ -113,6 +102,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:${versions.recyclerView}"
     implementation "com.google.android.material:material:${versions.materialDesign}"
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
     implementation 'com.google.android.libraries.places:places:2.2.0'
     testImplementation "junit:junit:${versions.junit}"
     androidTestImplementation "androidx.test.ext:junit:${versions.extjunit}"
@@ -245,3 +235,5 @@ dependencies {
     // Location
     implementation 'com.github.quentin7b:android-location-tracker:3.2'
 }
+
+apply plugin: 'com.google.gms.google-services'

@@ -3,13 +3,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.breakit.driver.ui.home.HomeFragment">
+    tools:context="com.breakit.delivery.ui.home.HomeFragment">
 
     <data>
 
         <variable
             name="order"
-            type="com.breakit.driver.model.Order" />
+            type="com.breakit.delivery.model.Order" />
 
         <variable
             name="deliveryNote"
@@ -174,29 +174,6 @@
                         tools:text="Something" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/call_ll"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Call Customer:"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="@{order.customerMobile}"
-                        android:textColor="@color/colorPrimary"
-                        tools:text="Something" />
-                </LinearLayout>
-
             </LinearLayout>
 
             <LinearLayout
@@ -234,12 +211,12 @@
                     app:visibleWhen="@{order.status == 2}" />
 
                 <Button
-                    android:id="@+id/abort_btn"
+                    android:id="@+id/cancel_btn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/darkMaterialRed"
                     android:backgroundTint="@color/darkMaterialRed"
-                    android:text="Abort"
+                    android:text="Cancel"
                     app:visibleWhen="@{order.status == 1 | order.status == 2}" />
             </LinearLayout>
 

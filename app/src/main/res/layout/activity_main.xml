@@ -7,8 +7,8 @@
     <data>
 
         <variable
-            name="viewModel"
-            type="com.breakit.driver.MainViewModel" />
+            name="arePermissionsGranted"
+            type="boolean" />
 
         <variable
             name="permissionTitle"
@@ -22,13 +22,13 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/location_popup_cv"
-            isGone="@{viewModel.arePermissionsGranted}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="40dp"
             android:elevation="0dp"
-            app:cardCornerRadius="20dp">
+            app:cardCornerRadius="20dp"
+            app:isGone="@{arePermissionsGranted}">
 
             <LinearLayout
                 android:layout_width="match_parent"

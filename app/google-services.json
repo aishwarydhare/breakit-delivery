@@ -8,7 +8,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1097631994413:android:ecc45d8bc68bdaf3399ea4",
+        "mobilesdk_app_id": "1:1097631994413:android:4a64ca6698cfbfb8399ea4",
         "android_client_info": {
           "package_name": "com.breakit.customer"
         }
@@ -37,9 +37,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1097631994413:android:a32e5855bf445c52399ea4",
+        "mobilesdk_app_id": "1:1097631994413:android:b964fdf80280a0db399ea4",
         "android_client_info": {
-          "package_name": "com.breakit.driver"
+          "package_name": "com.breakit.delivery"
         }
       },
       "oauth_client": [
